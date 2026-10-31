@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISIL Vita - Comida Saludable</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -80,6 +80,68 @@
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
 
+    <!-- Definición SVG reutilizable del Logo Oficial ISIL Vita - Comida Saludable -->
+    <svg width="0" height="0" class="hidden" aria-hidden="true">
+        <defs>
+            <linearGradient id="isilVitaGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#68B81E" />
+                <stop offset="55%" stop-color="#3B9B14" />
+                <stop offset="100%" stop-color="#23730B" />
+            </linearGradient>
+            <linearGradient id="isilVitaDarkGreenGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#24750B" />
+                <stop offset="100%" stop-color="#5CB01B" />
+            </linearGradient>
+
+            <symbol id="isil-vita-logo" viewBox="0 0 360 295">
+                <!-- Arco circular superior derecho -->
+                <path d="M 148 22 C 192 6, 240 20, 263 54 C 240 26, 194 14, 148 22 Z" fill="url(#isilVitaGreenGrad)" />
+                <!-- Arco circular izquierdo -->
+                <path d="M 106 55 C 82 90, 84 134, 111 154 C 91 130, 90 88, 106 55 Z" fill="url(#isilVitaGreenGrad)" />
+                <!-- Arco circular inferior derecho -->
+                <path d="M 269 124 C 263 148, 250 166, 234 176 C 246 162, 257 144, 269 124 Z" fill="url(#isilVitaGreenGrad)" />
+
+                <!-- Hojas superiores que brotan sobre la letra I -->
+                <!-- Hoja superior izquierda -->
+                <path d="M 144 52 C 118 49, 103 31, 100 6 C 125 12, 145 27, 144 52 Z" fill="url(#isilVitaGreenGrad)" />
+                <path d="M 142 50 C 131 38, 121 26, 111 16" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" fill="none" />
+                <!-- Hoja superior derecha -->
+                <path d="M 145 52 C 146 33, 161 21, 182 22 C 176 41, 162 51, 145 52 Z" fill="url(#isilVitaGreenGrad)" />
+                <path d="M 146 50 C 155 41, 164 34, 173 28" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+
+                <!-- Letra "I" serif negra clásica -->
+                <path d="M 121 56 L 180 56 L 180 59 C 166 60, 160 63, 160 74 L 160 137 C 160 148, 166 151, 180 152 L 180 155 L 121 155 L 121 152 C 135 151, 141 148, 141 137 L 141 74 C 141 63, 135 60, 121 59 Z" fill="#111111" />
+
+                <!-- Letra "V" verde que se transforma en hoja grande a la derecha -->
+                <path d="M 158 74 L 197 74 L 197 77 C 187 77, 184 80, 187 89 L 206 140 L 222 103 C 220 74, 245 56, 286 52 C 282 92, 261 116, 229 114 L 203 168 L 167 88 C 164 80, 161 77, 158 77 Z" fill="url(#isilVitaGreenGrad)" />
+                <!-- Nervadura blanca de la hoja principal de la V -->
+                <path d="M 222 118 C 236 98, 252 82, 270 67" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" />
+
+                <!-- Hoja curva inferior izquierda -->
+                <path d="M 112 158 C 136 152, 168 176, 211 180 C 176 190, 136 181, 112 158 Z" fill="url(#isilVitaGreenGrad)" />
+
+                <!-- Hoja inferior derecha con nervadura blanca -->
+                <path d="M 203 184 C 209 162, 224 148, 245 144 C 241 165, 226 179, 203 184 Z" fill="url(#isilVitaDarkGreenGrad)" />
+                <path d="M 206 182 C 217 171, 227 161, 237 152" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+
+                <!-- Texto principal: "ISIL" en negro redondeado grueso -->
+                <text x="36" y="244" font-family="'Poppins', sans-serif" font-size="66" font-weight="900" fill="#111111" letter-spacing="1.5">ISIL</text>
+
+                <!-- Texto principal: "Vita" en cursiva verde vibrante -->
+                <text x="172" y="246" font-family="'Kaushan Script', cursive" font-size="76" fill="url(#isilVitaGreenGrad)">Vita</text>
+
+                <!-- Hoja en la punta derecha de "Vita" -->
+                <path d="M 311 215 C 312 195, 326 184, 347 182 C 343 203, 330 214, 311 215 Z" fill="url(#isilVitaGreenGrad)" />
+                <path d="M 313 213 C 322 204, 331 196, 339 189" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+
+                <!-- Subtítulo inferior: —— COMIDA SALUDABLE —— -->
+                <line x1="38" y1="276" x2="71" y2="276" stroke="#3B9B14" stroke-width="2.4" stroke-linecap="round" />
+                <text x="186" y="281" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="14.5" font-weight="600" fill="#111111" letter-spacing="4.2">COMIDA SALUDABLE</text>
+                <line x1="301" y1="276" x2="334" y2="276" stroke="#3B9B14" stroke-width="2.4" stroke-linecap="round" />
+            </symbol>
+        </defs>
+    </svg>
+
     <!-- Contenedor de Notificaciones Toast -->
     <div id="toast-container" class="fixed bottom-5 right-5 z-[100] flex flex-col gap-2.5 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
 
@@ -87,12 +149,10 @@
     <header class="fixed w-full top-0 z-40 glass-header shadow-sm transition-all duration-300 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="scrollToSection('home')">
-                    <div class="text-3xl font-extrabold text-isil-green tracking-tight">
-                        ISIL <span class="text-isil-accent">Vita</span>
-                    </div>
-                </div>
+                <!-- Logo en la esquina superior izquierda con redirección al inicio -->
+                <a href="#home" onclick="scrollToSection('home'); return false;" class="flex-shrink-0 flex items-center cursor-pointer group" title="Ir al inicio">
+                    <img class="isil-vita-logo-img h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 430'><defs><linearGradient id='logoGreen' x1='0%' y1='100%' x2='100%' y2='0%'><stop offset='0%' stop-color='%232E7D0B'/><stop offset='55%' stop-color='%234B9C14'/><stop offset='100%' stop-color='%2368BC18'/></linearGradient></defs><rect width='500' height='430' rx='18' fill='%23ffffff'/><path d='M 204 20 A 132 132 0 0 1 360 64' stroke='url(%23logoGreen)' stroke-width='5.5' stroke-linecap='round' fill='none'/><path d='M 138 74 A 130 130 0 0 0 146 226' stroke='url(%23logoGreen)' stroke-width='6.5' stroke-linecap='round' fill='none'/><path d='M 390 134 A 130 130 0 0 1 342 246' stroke='url(%23logoGreen)' stroke-width='6' stroke-linecap='round' fill='none'/><path d='M 152 238 C 185 232, 240 262, 296 264 C 252 284, 195 274, 152 238 Z' fill='url(%23logoGreen)'/><path d='M 198 74 C 160 68, 142 40, 138 6 C 175 18, 198 40, 198 74 Z' fill='url(%23logoGreen)'/><path d='M 198 74 Q 172 45 154 22' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M 200 74 C 200 44, 222 24, 252 26 C 242 54, 224 70, 200 74 Z' fill='url(%23logoGreen)'/><path d='M 200 74 Q 218 52 236 38' stroke='%23ffffff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M 162 76 L 248 76 L 248 82 C 222 82, 213 86, 213 102 L 213 198 C 213 214, 222 218, 240 218 L 240 224 L 162 224 L 162 218 C 180 218, 185 214, 185 198 L 185 102 C 185 86, 180 82, 162 82 Z' fill='%23111111'/><path d='M 215 102 L 272 102 L 272 108 C 256 108, 254 112, 260 126 L 290 198 L 315 140 C 322 124, 330 100, 396 65 C 392 122, 366 152, 326 154 L 284 246 L 228 122 C 222 110, 220 108, 215 108 Z' fill='url(%23logoGreen)'/><path d='M 294 188 C 312 148, 338 116, 372 88' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M 280 264 C 292 228, 318 206, 354 206 C 340 240, 314 258, 280 264 Z' fill='url(%23logoGreen)'/><path d='M 280 264 Q 308 242 334 220' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><text x='48' y='374' font-family='Poppins, sans-serif' font-weight='800' font-size='92' letter-spacing='2' fill='%23111111'>ISIL</text><text x='234' y='374' font-family='Kaushan Script, Courgette, Georgia, cursive' font-style='italic' font-weight='700' font-size='104' fill='url(%23logoGreen)'>Vita</text><path d='M 430 342 C 428 310, 448 294, 480 288 C 474 322, 456 338, 430 342 Z' fill='url(%23logoGreen)'/><path d='M 430 342 Q 448 320 466 302' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><line x1='46' y1='408' x2='94' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/><text x='254' y='415' font-family='Poppins, sans-serif' font-weight='600' font-size='19' letter-spacing='5.5' fill='%23111111' text-anchor='middle'>COMIDA SALUDABLE</text><line x1='414' y1='408' x2='462' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/></svg>" alt="ISIL Vita - Comida Saludable">
+                </a>
                 
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
@@ -260,7 +320,11 @@
         <section class="py-16 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">¿Por qué elegir ISIL VITA?</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 flex flex-wrap items-center justify-center gap-3">
+                        <span>¿Por qué elegir</span>
+                        <img class="isil-vita-logo-img h-16 md:h-20 w-auto object-contain inline-block rounded-xl shadow-sm bg-white px-2 py-1 border border-gray-100" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 430'><defs><linearGradient id='logoGreen' x1='0%' y1='100%' x2='100%' y2='0%'><stop offset='0%' stop-color='%232E7D0B'/><stop offset='55%' stop-color='%234B9C14'/><stop offset='100%' stop-color='%2368BC18'/></linearGradient></defs><rect width='500' height='430' rx='18' fill='%23ffffff'/><path d='M 204 20 A 132 132 0 0 1 360 64' stroke='url(%23logoGreen)' stroke-width='5.5' stroke-linecap='round' fill='none'/><path d='M 138 74 A 130 130 0 0 0 146 226' stroke='url(%23logoGreen)' stroke-width='6.5' stroke-linecap='round' fill='none'/><path d='M 390 134 A 130 130 0 0 1 342 246' stroke='url(%23logoGreen)' stroke-width='6' stroke-linecap='round' fill='none'/><path d='M 152 238 C 185 232, 240 262, 296 264 C 252 284, 195 274, 152 238 Z' fill='url(%23logoGreen)'/><path d='M 198 74 C 160 68, 142 40, 138 6 C 175 18, 198 40, 198 74 Z' fill='url(%23logoGreen)'/><path d='M 198 74 Q 172 45 154 22' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M 200 74 C 200 44, 222 24, 252 26 C 242 54, 224 70, 200 74 Z' fill='url(%23logoGreen)'/><path d='M 200 74 Q 218 52 236 38' stroke='%23ffffff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M 162 76 L 248 76 L 248 82 C 222 82, 213 86, 213 102 L 213 198 C 213 214, 222 218, 240 218 L 240 224 L 162 224 L 162 218 C 180 218, 185 214, 185 198 L 185 102 C 185 86, 180 82, 162 82 Z' fill='%23111111'/><path d='M 215 102 L 272 102 L 272 108 C 256 108, 254 112, 260 126 L 290 198 L 315 140 C 322 124, 330 100, 396 65 C 392 122, 366 152, 326 154 L 284 246 L 228 122 C 222 110, 220 108, 215 108 Z' fill='url(%23logoGreen)'/><path d='M 294 188 C 312 148, 338 116, 372 88' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M 280 264 C 292 228, 318 206, 354 206 C 340 240, 314 258, 280 264 Z' fill='url(%23logoGreen)'/><path d='M 280 264 Q 308 242 334 220' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><text x='48' y='374' font-family='Poppins, sans-serif' font-weight='800' font-size='92' letter-spacing='2' fill='%23111111'>ISIL</text><text x='234' y='374' font-family='Kaushan Script, Courgette, Georgia, cursive' font-style='italic' font-weight='700' font-size='104' fill='url(%23logoGreen)'>Vita</text><path d='M 430 342 C 428 310, 448 294, 480 288 C 474 322, 456 338, 430 342 Z' fill='url(%23logoGreen)'/><path d='M 430 342 Q 448 320 466 302' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><line x1='46' y1='408' x2='94' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/><text x='254' y='415' font-family='Poppins, sans-serif' font-weight='600' font-size='19' letter-spacing='5.5' fill='%23111111' text-anchor='middle'>COMIDA SALUDABLE</text><line x1='414' y1='408' x2='462' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/></svg>" alt="ISIL Vita">
+                        <span>?</span>
+                    </h2>
                     <div class="w-20 h-2 bg-isil-green mx-auto rounded-full"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -598,9 +662,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="text-3xl font-extrabold text-white tracking-tight mb-4">
-                        ISIL <span class="text-isil-green">Vita</span>
-                    </div>
+                    <a href="#home" onclick="scrollToSection('home'); return false;" class="inline-block bg-white p-2.5 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 mb-4 cursor-pointer" title="Volver al inicio">
+                        <img class="isil-vita-logo-img h-20 w-auto object-contain" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 430'><defs><linearGradient id='logoGreen' x1='0%' y1='100%' x2='100%' y2='0%'><stop offset='0%' stop-color='%232E7D0B'/><stop offset='55%' stop-color='%234B9C14'/><stop offset='100%' stop-color='%2368BC18'/></linearGradient></defs><rect width='500' height='430' rx='18' fill='%23ffffff'/><path d='M 204 20 A 132 132 0 0 1 360 64' stroke='url(%23logoGreen)' stroke-width='5.5' stroke-linecap='round' fill='none'/><path d='M 138 74 A 130 130 0 0 0 146 226' stroke='url(%23logoGreen)' stroke-width='6.5' stroke-linecap='round' fill='none'/><path d='M 390 134 A 130 130 0 0 1 342 246' stroke='url(%23logoGreen)' stroke-width='6' stroke-linecap='round' fill='none'/><path d='M 152 238 C 185 232, 240 262, 296 264 C 252 284, 195 274, 152 238 Z' fill='url(%23logoGreen)'/><path d='M 198 74 C 160 68, 142 40, 138 6 C 175 18, 198 40, 198 74 Z' fill='url(%23logoGreen)'/><path d='M 198 74 Q 172 45 154 22' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M 200 74 C 200 44, 222 24, 252 26 C 242 54, 224 70, 200 74 Z' fill='url(%23logoGreen)'/><path d='M 200 74 Q 218 52 236 38' stroke='%23ffffff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M 162 76 L 248 76 L 248 82 C 222 82, 213 86, 213 102 L 213 198 C 213 214, 222 218, 240 218 L 240 224 L 162 224 L 162 218 C 180 218, 185 214, 185 198 L 185 102 C 185 86, 180 82, 162 82 Z' fill='%23111111'/><path d='M 215 102 L 272 102 L 272 108 C 256 108, 254 112, 260 126 L 290 198 L 315 140 C 322 124, 330 100, 396 65 C 392 122, 366 152, 326 154 L 284 246 L 228 122 C 222 110, 220 108, 215 108 Z' fill='url(%23logoGreen)'/><path d='M 294 188 C 312 148, 338 116, 372 88' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M 280 264 C 292 228, 318 206, 354 206 C 340 240, 314 258, 280 264 Z' fill='url(%23logoGreen)'/><path d='M 280 264 Q 308 242 334 220' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><text x='48' y='374' font-family='Poppins, sans-serif' font-weight='800' font-size='92' letter-spacing='2' fill='%23111111'>ISIL</text><text x='234' y='374' font-family='Kaushan Script, Courgette, Georgia, cursive' font-style='italic' font-weight='700' font-size='104' fill='url(%23logoGreen)'>Vita</text><path d='M 430 342 C 428 310, 448 294, 480 288 C 474 322, 456 338, 430 342 Z' fill='url(%23logoGreen)'/><path d='M 430 342 Q 448 320 466 302' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><line x1='46' y1='408' x2='94' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/><text x='254' y='415' font-family='Poppins, sans-serif' font-weight='600' font-size='19' letter-spacing='5.5' fill='%23111111' text-anchor='middle'>COMIDA SALUDABLE</text><line x1='414' y1='408' x2='462' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/></svg>" alt="ISIL Vita - Comida Saludable">
+                    </a>
                     <p class="text-gray-400 max-w-sm mb-6">Tu mejor opción para comer rápido, sano y a buen precio dentro del campus. ¡No hagas más colas!</p>
                 </div>
                 
@@ -960,8 +1024,14 @@
          LÓGICA INTERACTIVA JAVASCRIPT
          ========================================== -->
     <script>
-        // 1. Año dinámico en el footer
+        // 1. Año dinámico en el footer y carga del logo exacto en las 3 ubicaciones
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        const LOGO_SRC = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 430'><defs><linearGradient id='logoGreen' x1='0%' y1='100%' x2='100%' y2='0%'><stop offset='0%' stop-color='%232E7D0B'/><stop offset='55%' stop-color='%234B9C14'/><stop offset='100%' stop-color='%2368BC18'/></linearGradient></defs><rect width='500' height='430' rx='18' fill='%23ffffff'/><path d='M 204 20 A 132 132 0 0 1 360 64' stroke='url(%23logoGreen)' stroke-width='5.5' stroke-linecap='round' fill='none'/><path d='M 138 74 A 130 130 0 0 0 146 226' stroke='url(%23logoGreen)' stroke-width='6.5' stroke-linecap='round' fill='none'/><path d='M 390 134 A 130 130 0 0 1 342 246' stroke='url(%23logoGreen)' stroke-width='6' stroke-linecap='round' fill='none'/><path d='M 152 238 C 185 232, 240 262, 296 264 C 252 284, 195 274, 152 238 Z' fill='url(%23logoGreen)'/><path d='M 198 74 C 160 68, 142 40, 138 6 C 175 18, 198 40, 198 74 Z' fill='url(%23logoGreen)'/><path d='M 198 74 Q 172 45 154 22' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M 200 74 C 200 44, 222 24, 252 26 C 242 54, 224 70, 200 74 Z' fill='url(%23logoGreen)'/><path d='M 200 74 Q 218 52 236 38' stroke='%23ffffff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M 162 76 L 248 76 L 248 82 C 222 82, 213 86, 213 102 L 213 198 C 213 214, 222 218, 240 218 L 240 224 L 162 224 L 162 218 C 180 218, 185 214, 185 198 L 185 102 C 185 86, 180 82, 162 82 Z' fill='%23111111'/><path d='M 215 102 L 272 102 L 272 108 C 256 108, 254 112, 260 126 L 290 198 L 315 140 C 322 124, 330 100, 396 65 C 392 122, 366 152, 326 154 L 284 246 L 228 122 C 222 110, 220 108, 215 108 Z' fill='url(%23logoGreen)'/><path d='M 294 188 C 312 148, 338 116, 372 88' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M 280 264 C 292 228, 318 206, 354 206 C 340 240, 314 258, 280 264 Z' fill='url(%23logoGreen)'/><path d='M 280 264 Q 308 242 334 220' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><text x='48' y='374' font-family='Poppins, sans-serif' font-weight='800' font-size='92' letter-spacing='2' fill='%23111111'>ISIL</text><text x='234' y='374' font-family='Kaushan Script, Courgette, Georgia, cursive' font-style='italic' font-weight='700' font-size='104' fill='url(%23logoGreen)'>Vita</text><path d='M 430 342 C 428 310, 448 294, 480 288 C 474 322, 456 338, 430 342 Z' fill='url(%23logoGreen)'/><path d='M 430 342 Q 448 320 466 302' stroke='%23ffffff' stroke-width='2.5' fill='none' stroke-linecap='round'/><line x1='46' y1='408' x2='94' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/><text x='254' y='415' font-family='Poppins, sans-serif' font-weight='600' font-size='19' letter-spacing='5.5' fill='%23111111' text-anchor='middle'>COMIDA SALUDABLE</text><line x1='414' y1='408' x2='462' y2='408' stroke='%234B9C14' stroke-width='3' stroke-linecap='round'/></svg>";
+
+        document.querySelectorAll('.isil-vita-logo-img').forEach(img => {
+            img.src = LOGO_SRC;
+        });
 
         // 2. Estado en memoria de la aplicación
         let cart = [];
