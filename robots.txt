@@ -1,0 +1,6 @@
+# Permitir a todos los motores de búsqueda rastrear todo el sitio
+User-agent: *
+Allow: /
+
+# Ruta directa al mapa del sitio (Sitemap)
+Sitemap: https://josueisil.github.io/ISIL_VITA/sitemap.xml
